@@ -1,0 +1,72 @@
+body {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: 1em;
+  background-color: black;
+  color: rgb(255, 235, 221);
+  font-family: monospace;
+
+  input[type="submit"] {
+    place-self: center;
+
+    border: none;
+    background-color: rgb(246, 152, 65);
+    color: rgb(76, 59, 22);
+    font-size: 1rem;
+
+    border: white solid 1px;
+    padding: 2em 1em;
+    cursor: pointer;
+    margin: 2em 0;
+
+    &:hover {
+      color: rgb(220, 67, 67);
+      background-color: rgb(246, 216, 65);
+      scale: 1.02;
+      transition: scale 50ms ease-out;
+    }
+  }
+
+  input[type="number"] {
+    border: 1px yellow solid;
+    background: rgb(56, 84, 70);
+    color: rgb(255, 235, 221);
+    text-align: center;
+    box-shadow: yellow 3px 4px;
+
+    margin: 0.5em 0;
+    place-self: center;
+    width: 100%;
+    max-width: 4rem;
+    font-size: 2rem;
+    &:focus {
+      border: 2px solid yellow;
+    }
+    &:hover {
+      background-color: rgb(76, 130, 87);
+    }
+
+    /* Hides number arrows in: Chrome, Safari, Edge, Opera */
+    ::-webkit-outer-spin-button,
+    ::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Hides number arrows in:  Firefox */
+    -moz-appearance: textfield;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .game__area {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin: 3em 0;
+  }
+}
