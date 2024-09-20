@@ -12,10 +12,22 @@
 
 
 // let price = 200;
+
 let tax = 1.25;
 
 function calcPrice(price, tax) {
     return price * tax;
 }
 
-console.log(calcPrice(200, tax));
+console.log( `Total price is: ${calcPrice(500, tax)} kr`);
+
+
+///////
+
+// calculatePrice(200, 37)
+// function calculatePrice(price, moms) {
+//     // price * (1 + moms / 100);
+// }
+
+// console.log( price * (1 + moms / 100))
+
