@@ -24,7 +24,6 @@ const playAgain = document.querySelector(".play__again");
 
 // Press start
 btnStart.addEventListener("click", () => {
-  
   startGame();
 });
 
@@ -99,16 +98,18 @@ btnCorrect.addEventListener("click", () => {
   } else {
     result.textContent = `The computer guessed your number ${computerGuess} in ${numberOfGuesses} attempts!`;
   }
+  // Shows the styling for result area
   result.classList.remove("hide")
 
   // Hide feedback buttons and show play again button
   buttons.classList.add("hide");
-  playAgain.classList.toggle("hide");
+  playAgain.classList.remove("hide");
 
 });
 
 // Play again
 playAgain.addEventListener("click", () => {
-  // Reset the game and start over
+
+  // calls the startGame function
   startGame();
 });
