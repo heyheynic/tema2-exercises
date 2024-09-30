@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Guessing Number</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Number guessing</h1>
+    <div class="computer__area">
+        <p class="comp__guess"></p>
+    </div>
+    <p class="instructions">
+      You, the player, are going to think of a number between 0 and 100, and
+      then the computer will have to guess it based on your feedback.
+    </p>
+  
+    <div class="start">
+      <p>Ready?</p>
+      <button class="btn__start">Let's go!</button>
+    </div>
+  
+
+    <div class="buttons game__buttons hide">
+      <button class="btn__low buttons">Too low</button>
+      <button class="btn__high buttons">It's too high!</button>
+      <button class="btn__correct buttons">You guessed correct!</button>
+    </div>
+
+    <div class="result hide"></div>
+    <div class="play__again hide">
+      <p>Want to play again?</p>
+      <button class="btn__start">Let's go!</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
