@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breadcrumbs</title>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>Breadcrumbs Generator</h1>
+    <nav>
+      <ul class="breadcrumb"></ul>
+    </nav>
+    <button>Generating breadcrumbs</button>
+  </body>
+</html>
+
+<style>
+  ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 1em;
+  }
+
+  .breadcrumb li:not(:last-child)::after {
+    content: " / ";
+    margin: 1em;
+
+  }
+</style>
