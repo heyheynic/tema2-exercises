@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data stuff</title>
+  </head>
+  <style>
+    [data-filter="bat"] {
+      background-color: black;
+      color: white;
+    }
+    [data-filter="fox"] {
+      background-color: darkred;
+      color: white;
+    }
+
+
+  </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", init);
+
+    //DOMContentLoaded
+    function init() {
+      document.querySelector("button").addEventListener("click", change);
+    }
+
+    // function change(evt) {
+    //   console.log("EVT", evt.target);
+    // }
+
+    function change() {
+    //   document.querySelector("h1").dataset.filter = "bat";
+    // }
+    const heading = document.querySelector("h1");
+    // Toggle the dataset filter between 'bat' and 'fox'
+    heading.dataset.filter = heading.dataset.filter === "bat" ? "fox" : "bat";
+  }
+  </script>
+
+  <body>
+    <h1 data-filter="fox">Hey, brown is fox, black is cat</h1>
+    <button>Ch-ch-ch-change</button>
+  </body>
+</html>
+
+<script>
+  // // DOMContentLoaded
+  //    document.querySelector("button").addEventListener("click", change);
+
+  //   function change() {
+  //     console.log("change");
+  //   }
+</script>

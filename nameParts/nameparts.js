@@ -15,7 +15,6 @@ console.log("Full name:" + fullName)
 const firstName = fullName.substring(0, fullName.indexOf(" "))
 console.log("First name is: " + firstName);
 
-
 // +1 makes us remove that space, so that it isn't included in the name.
 const middleName = fullName.substring(fullName.indexOf(" ") + 1 , fullName.lastIndexOf(" "));
 console.log("Middle name is: " + middleName)
@@ -24,10 +23,10 @@ console.log("Middle name is: " + middleName)
 const lastName = fullName.substring(fullName.lastIndexOf(" ") + 1);
 console.log("Last name is: " + lastName);
 
-
 // Multiple middle names.
 const multipleNames = "Albus Percival Wulfric Brian Dumbledore";
 
+// Same method as used in middleName
 const multipleMiddleNames = multipleNames.substring(multipleNames.indexOf(" ") +1, multipleNames.lastIndexOf(" "));
 console.log("All middle names:",multipleMiddleNames)
 

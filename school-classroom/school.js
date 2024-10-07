@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 // node --watch school.js
 
@@ -17,10 +17,20 @@
 
 // console.log(middleName)
 
+// let string = "smash or pass!";
 
-let string = "smash or pass!";
+// let capitalizedString = string[0].toUpperCase() + string.slice(1);
 
-let capitalizedString = string[0].toUpperCase() + string.slice(1);
+// console.log(capitalizedString);
 
-console.log(capitalizedString);
+////////
+
+let theText = "lorem ipsum slalom lilo lomo fomo";
+const modifiedText = theText.replaceAll("ord", "ting");
+
+console.log(modifiedText);
+
+const splittedText = theText.split("ord");
+console.log(splittedText);
+console.log(splittedText.join("ting"));
 
